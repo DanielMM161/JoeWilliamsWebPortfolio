@@ -1,0 +1,84 @@
+.About{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 20px;
+    padding-bottom: 10vh;
+
+    display: flex;
+    flex-direction: column;
+    
+
+    overflow: hidden;
+    color: white;
+    
+    background: rgba(255,255,255,1);
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 7%, rgba(242,239,242,1) 25%, rgba(184,164,169,1) 72%, rgba(177,153,159,1) 83%, rgba(165,136,143,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(7%, rgba(255,255,255,1)), color-stop(25%, rgba(242,239,242,1)), color-stop(72%, rgba(184,164,169,1)), color-stop(83%, rgba(177,153,159,1)), color-stop(100%, rgba(165,136,143,1)));
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 7%, rgba(242,239,242,1) 25%, rgba(184,164,169,1) 72%, rgba(177,153,159,1) 83%, rgba(165,136,143,1) 100%);
+    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 7%, rgba(242,239,242,1) 25%, rgba(184,164,169,1) 72%, rgba(177,153,159,1) 83%, rgba(165,136,143,1) 100%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 7%, rgba(242,239,242,1) 25%, rgba(184,164,169,1) 72%, rgba(177,153,159,1) 83%, rgba(165,136,143,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 7%, rgba(242,239,242,1) 25%, rgba(184,164,169,1) 72%, rgba(177,153,159,1) 83%, rgba(165,136,143,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#a5888f', GradientType=0 );
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+.About > span{ text-transform: uppercase; }
+.About .hello{ color: black; }
+.About *{ 
+    white-space: nowrap;
+    transition: font-size .2s;
+}
+/** lower than 600px -> line-height*/
+@media only screen and (max-width: 600px) {
+    .About > * { line-height: calc(3vh + 12px); }
+}
+
+@media only screen and (max-width: 300px) {
+    .About{ font-size: 9px; }
+    .About .Br{ min-height: 50px; }
+}
+
+@media only screen and (min-width: 300px) {
+    .About{ font-size: 11px; }
+    .About .Br{ min-height: 80px; }
+}
+
+@media only screen and (min-width: 350px) {
+    .About{ font-size: 13px; }
+    .About .Br{ min-height: 100px; }
+}
+
+@media only screen and (min-width: 450px) {
+    .About{ font-size: 17px; }
+    .About .Br{ min-height: 120px; }
+    .About span{ margin-bottom: 3px; }
+}
+
+@media only screen and (min-width: 550px) {
+    .About{ font-size: 19px; }
+    .About .Br{ min-height: 140px; }
+}
+
+@media only screen and (min-width: 600px) {
+    .About{ font-size: 22px; }
+    .About .Br{ min-height: 13vh; }
+}
+
+@media only screen and (min-width: 768px) {
+    .About{ font-size: 28px; }
+    .About .Br{ min-height: 16vh; }
+    .About span{ margin-bottom: 10px; }
+}
+
+@media only screen and (min-width: 992px) {
+    .About{ font-size: 2.6vw; }
+    .About .Br{ min-height: 22vh; }
+    
+}
+
+@media only screen and (min-width: 1200px) {
+    /* .About{ font-size: 3vw; } */
+    .About .Br{ min-height: 20vh; }
+}

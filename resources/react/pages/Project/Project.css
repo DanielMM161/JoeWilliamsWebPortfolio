@@ -1,0 +1,249 @@
+.Project{
+    padding-bottom: 3vh;
+    min-width: 100vw;
+
+    height: 100%;
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.Project::-webkit-scrollbar { height: 5px; }
+.Project::-webkit-scrollbar-track { background: lightgray; }/* Track */
+.Project::-webkit-scrollbar-thumb { background: darkgray; }/* Handle */
+.Project::-webkit-scrollbar-thumb:hover { background: gray;  }/* Handle on hover */
+
+.Project .title{
+    position: fixed;
+    top: 70px;
+
+    font-weight: bold;
+    text-transform: uppercase;
+
+    transition: font-size .2s;
+}
+.Project .back{
+    position: fixed;
+    top: 2vh;
+    
+    background: none;
+    color: black;
+
+    transition: color .4s, font-size .2s;
+}
+.Project .back:hover{ color: gray; }
+
+.Project .Description{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.Project .Description *,
+.Project .Details p{ 
+    min-width: 300px;
+    max-width: 1000px;
+    transition: font-size .2s; 
+}
+.Project .Description .desc{ 
+    width: 51vw;
+    margin-top: auto;
+    position: relative;
+}
+.Project .Description .type{
+    width: 51vw;
+    justify-self: flex-end;
+    margin-top: auto;
+    font-size: 0.8em; 
+}
+.Project .Details p{ 
+    width: 51vw;
+    padding-bottom: 10vh;
+    /* padding-right: 7vw; */
+}
+
+.Project .Img{
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Project .Img img{ object-fit: cover; }
+.Project .Img.big{ padding: 0 5px; }
+.Project .Img.big img{ height: 100%; }
+.Project .Img.medium{ padding: 0 50px; }
+.Project .Img.medium img{ height: 90%; }
+.Project .Img.small{ padding: 0 6vw; }
+.Project .Img.small img{ height: 80%; }
+.Project.background-none .Img.medium{ margin: 0 5px; }
+.Project.c-word .Img.medium{ background-color: #625455; }
+.Project.fluttering-flamingo .Img.medium{ background-color: #935a49; }
+.Project.lara-logan .Img.medium{ background-color: #78423c; }
+.Project.human-herd .Img.small{ background-color: #625455; }
+
+.Project .Frame{
+    min-height: 70vh;
+    min-width: 140vh;
+}
+@media only screen and (max-width: 600px) {
+    .Project .Frame{
+        min-height: 80vw;
+        min-width: 120vw;
+    }
+    .Project .Description .desc,
+    .Project .Description .type,
+    .Project .Details {
+        line-height: calc(3vh + 5px);
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .Project .title,
+    .Project .back { 
+        font-size: 10px;
+        left: 15px;
+    }
+    .Project > *:last-child{ padding: 15px; }
+    .Project .Description{
+        padding: 0 15px;
+        font-size: 10px;
+        line-height: 20px;
+    }
+    .Project .Details{
+        padding: 0 15px;
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width: 300px) {
+    .Project .title,
+    .Project .back { 
+        font-size: 12px;
+        left: 15px;
+    }
+    .Project > *:last-child{ padding: 15px; }
+    .Project .Description{
+        padding: 0 25px 0 15px;
+        font-size: 10px;
+        line-height: 22px;
+    }
+    .Project .Details{
+        padding: 0 25px;
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width: 350px) {
+    .Project .title,
+    .Project .back { 
+        font-size: 15px; 
+        left: 15px;
+    }
+    .Project > *:last-child{ padding: 15px; }
+    .Project .Description{
+        padding: 0 25px 0 15px;
+        font-size: 11px;
+        line-height: 24px;
+    }
+    .Project .Details{
+        padding: 0 25px;
+        font-size: 11px;
+    }
+}
+
+@media only screen and (min-width: 450px) {
+    .Project .title,
+    .Project .back { 
+        font-size: 19px;
+        left: 20px;
+    }
+    .Project > *:last-child{ padding: 20px; }
+    .Project .Description{
+        padding: 0 30px 0 20px;
+        font-size: 12px;
+    }
+    .Project .Details{
+        padding: 0 30px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .Project .title,
+    .Project .back { 
+        font-size: 22px;
+        left: 25px;
+    }
+    .Project > *:last-child{ padding: 25px; }
+    .Project .Description{
+        padding: 0 35px 0 25px;
+        font-size: 12px;
+    }
+    .Project .Details{
+        padding: 0 35px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .Project .title,
+    .Project .back { 
+        font-size: 23px;
+        left: 35px;
+    }
+    .Project > *:last-child{ padding: 35px; }
+    .Project .Description{
+        padding: 0 55px 0 35px;
+        font-size: 12px;
+    }
+    .Project .Details{
+        padding: 0 55px;
+        font-size: 12px;
+    }
+    .Project.dark-elf .Img{
+        align-self: flex-end;
+        justify-self: flex-end;
+        margin-left: auto;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .Project .title,
+    .Project .back { 
+        font-size: 24px;
+        left: 45px; 
+    }
+    .Project > *:last-child{ padding: 45px; }
+    .Project .Description{
+        padding: 0 65px 0 45px;
+        font-size: 13px;
+    }
+    .Project .Details{
+        padding: 0 65px;
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .Project .title,
+    .Project .back {
+        font-size: 25px;
+        left: 48px;
+    }
+    .Project > *:last-child{ padding: 55px;  }
+    .Project .Description{
+        padding: 0 60px 0 48px;
+        font-size: 13px;
+    }
+    .Project .Details{
+        padding: 0 80px;
+        font-size: 13px;
+    }
+}
