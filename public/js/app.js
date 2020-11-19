@@ -6494,7 +6494,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".overlay {\r\n    position: fixed;\r\n    top: 0;\r\n    right: 0;\r\n    bottom: 0;\r\n    left: 0;\r\n    height: 100%;\r\n    background-color: rgba(0,0,0,0.4);\r\n    display: flex;\r\n    align-items: flex-end;\r\n}\r\n\r\n.modal {\r\n    text-align: center;\r\n    color: white;\r\n    background-color: rgb(70, 64, 70);\r\n    width: 100%;\r\n    height: 50vh;\r\n    position: relative;\r\n    flex-flow: column;\r\n    margin: 13px;\r\n}\r\n\r\n.text-modal {\r\n    font-size: 1.2em;\r\n}\r\n\r\n@media screen and (max-width: 480px) {\r\n    .text-hello {\r\n        margin-top: 5px;\r\n    }\r\n  }", ""]);
+exports.push([module.i, ".overlay {\r\n    position: fixed;\r\n    top: 0;\r\n    right: 0;\r\n    bottom: 0;\r\n    left: 0;\r\n    height: 100%;\r\n    background-color: rgba(0,0,0,0.4);\r\n    display: flex;\r\n    align-items: flex-end;\r\n}\r\n\r\n.modal {\r\n    text-align: center;\r\n    color: white;\r\n    background-color: rgb(70, 64, 70);\r\n    width: 100%;\r\n    height: 50vh;\r\n    position: relative;\r\n    flex-flow: column;\r\n    margin: 13px;\r\n}\r\n\r\n.text-modal {\r\n    font-size: 1.2em;\r\n}\r\n\r\n@media screen and (max-width: 480px) {\r\n    .text-hello {\r\n        margin-top: 17px;\r\n    }\r\n  }", ""]);
 
 // exports
 
@@ -81565,7 +81565,7 @@ var Modal = function Modal(_ref) {
       if (window.innerWidth <= 480) {
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
           className: "text-modal"
-        }, "THANKS FOR SAYNG!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        }, "THANKS FOR SAYNG"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
           className: "text-modal text-hello"
         }, "HELLO!"));
       } else {

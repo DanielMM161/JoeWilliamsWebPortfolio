@@ -10,7 +10,7 @@ export const Modal = ({sentEmail,onClickButton}) => {
             if (window.innerWidth <= 480) {
                 return(
                     <>
-                        <p className='text-modal'>THANKS FOR SAYNG!</p>
+                        <p className='text-modal'>THANKS FOR SAYNG</p>
                         <p className='text-modal text-hello'>HELLO!</p>
                     </>   
                 )
