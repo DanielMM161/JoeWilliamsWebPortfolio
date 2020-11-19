@@ -24,3 +24,9 @@
 .text-modal {
     font-size: 1.2em;
 }
+
+@media screen and (max-width: 480px) {
+    .text-hello {
+        margin-top: 5px;
+    }
+  }
