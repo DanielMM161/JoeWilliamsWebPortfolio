@@ -81280,7 +81280,7 @@ var Button = function Button(_ref) {
     className: "".concat(clase, " alignc justifyc"),
     onClick: onClick
   }, text === 'HOME' ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
-    to: "/home"
+    to: "/"
   }, text) : text);
 };
 var ButtonLink = function ButtonLink(_ref2) {
@@ -81594,10 +81594,12 @@ var Modal = function Modal(_ref) {
     className: "overlay"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "modal flex alignc justifyc"
-  }, showMessageEmail(), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), sentEmail ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
-    to: "/",
-    className: "modal-button alignc justifyc"
-  }, "HOME") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Button__WEBPACK_IMPORTED_MODULE_2__["Button"], {
+  }, showMessageEmail(), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), sentEmail ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Button__WEBPACK_IMPORTED_MODULE_2__["Button"], {
+    text: "HOME",
+    type: "button",
+    clase: "modal-button",
+    onClick: onClickButton
+  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Button__WEBPACK_IMPORTED_MODULE_2__["Button"], {
     text: "RETRY",
     type: "button",
     clase: "modal-button",
