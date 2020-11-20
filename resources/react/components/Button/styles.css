@@ -31,3 +31,9 @@ button {
     font-size: medium;
     font-weight: bold;
 }
+
+@media screen and (max-width: 480px) {
+    .text-home {
+        margin-bottom: 8px;
+    }
+}

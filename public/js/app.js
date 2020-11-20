@@ -6437,7 +6437,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "button {\r\n    outline:none;\r\n}\r\n.modal-button {\r\n    margin-top: 30px;\r\n    cursor: pointer;\r\n    background: transparent;\r\n    border: 2px solid white;\r\n    color: white;\r\n    font-weight: bold;\r\n    display: flex;\r\n    width: 135px;\r\n    height: 30px;\r\n}\r\n\r\n.modal-button a {\r\n    color: white;\r\n}\r\n\r\n.submit {\r\n    cursor: pointer;\r\n    background: transparent;\r\n    border: 2px solid white;\r\n    color: white;\r\n    display: flex;\r\n    width: 200px;\r\n    height: 52px;\r\n    margin: auto;\r\n    margin-top: 59px;\r\n    margin-bottom: 45px;\r\n    font-size: medium;\r\n    font-weight: bold;\r\n}", ""]);
+exports.push([module.i, "button {\r\n    outline:none;\r\n}\r\n.modal-button {\r\n    margin-top: 30px;\r\n    cursor: pointer;\r\n    background: transparent;\r\n    border: 2px solid white;\r\n    color: white;\r\n    font-weight: bold;\r\n    display: flex;\r\n    width: 135px;\r\n    height: 30px;\r\n}\r\n\r\n.modal-button a {\r\n    color: white;\r\n}\r\n\r\n.submit {\r\n    cursor: pointer;\r\n    background: transparent;\r\n    border: 2px solid white;\r\n    color: white;\r\n    display: flex;\r\n    width: 200px;\r\n    height: 52px;\r\n    margin: auto;\r\n    margin-top: 59px;\r\n    margin-bottom: 45px;\r\n    font-size: medium;\r\n    font-weight: bold;\r\n}\r\n\r\n@media screen and (max-width: 480px) {\r\n    .text-home {\r\n        margin-bottom: 8px;\r\n    }\r\n}", ""]);
 
 // exports
 
@@ -81280,6 +81280,7 @@ var Button = function Button(_ref) {
     className: "".concat(clase, " alignc justifyc"),
     onClick: onClick
   }, text === 'HOME' ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    className: "text-home",
     to: "/"
   }, text) : text);
 };
