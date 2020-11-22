@@ -6437,7 +6437,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "button {\r\n    outline:none;\r\n}\r\n.modal-button {\r\n    margin-top: 30px;\r\n    cursor: pointer;\r\n    background: transparent;\r\n    border: 2px solid white;\r\n    color: white;\r\n    font-weight: bold;\r\n    display: flex;\r\n    width: 135px;\r\n    height: 30px;\r\n}\r\n\r\n.modal-button a {\r\n    color: white;\r\n}\r\n\r\n.submit {\r\n    cursor: pointer;\r\n    background: transparent;\r\n    border: 2px solid white;\r\n    color: white;\r\n    display: flex;\r\n    width: 200px;\r\n    height: 52px;\r\n    margin: auto;\r\n    margin-top: 59px;\r\n    margin-bottom: 45px;\r\n    font-size: medium;\r\n    font-weight: bold;\r\n}\r\n\r\n@media screen and (max-width: 480px) {\r\n    .text-home {\r\n        margin-bottom: 8px;\r\n    }\r\n}", ""]);
+exports.push([module.i, "button {\r\n    outline:none;\r\n}\r\n.modal-button {\r\n    font-size: 0.8em;\r\n    margin-top: 30px;\r\n    cursor: pointer;\r\n    background: transparent;\r\n    border: 2px solid white;\r\n    color: white;\r\n    font-weight: bold;\r\n    display: flex;\r\n    width: 135px;\r\n    height: 30px;\r\n}\r\n\r\n.modal-button a {\r\n    color: white;\r\n}\r\n\r\n.submit {\r\n    cursor: pointer;\r\n    background: transparent;\r\n    border: 2px solid white;\r\n    color: white;\r\n    display: flex;\r\n    width: 200px;\r\n    height: 52px;\r\n    margin: auto;\r\n    margin-top: 59px;\r\n    margin-bottom: 45px;\r\n    font-size: medium;\r\n    font-weight: bold;\r\n}\r\n\r\n@media screen and (max-width: 480px) {\r\n    .text-home {\r\n        margin-bottom: 8px;\r\n    }\r\n    .modal-button {\r\n        font-size: 0.8em;\r\n        width: 125px;\r\n        height: 30px;\r\n    }\r\n}\r\n@media screen and (max-width: 380px) {\r\n    .modal-button {\r\n        font-size: 0.7em;\r\n        width: 120px;\r\n        height: 28px;\r\n    }\r\n}\r\n@media screen and (max-width: 330px) {\r\n    .modal-button {\r\n        width: 115px;\r\n        height: 27px;    \r\n    }\r\n}", ""]);
 
 // exports
 
@@ -6494,7 +6494,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".overlay {\r\n    position: fixed;\r\n    top: 0;\r\n    right: 0;\r\n    bottom: 0;\r\n    left: 0;\r\n    height: 100%;\r\n    background-color: rgba(0,0,0,0.4);\r\n    display: flex;\r\n    align-items: flex-end;\r\n}\r\n\r\n.modal {\r\n    text-align: center;\r\n    color: white;\r\n    background-color: rgb(70, 64, 70);\r\n    width: 100%;\r\n    height: 50vh;\r\n    position: relative;\r\n    flex-flow: column;\r\n    margin: 13px;\r\n}\r\n\r\n.text-modal {\r\n    font-size: 1.2em;\r\n}\r\n\r\n@media screen and (max-width: 480px) {\r\n    .text-hello {\r\n        margin-top: 17px;\r\n    }\r\n  }", ""]);
+exports.push([module.i, ".overlay {\r\n    position: fixed;\r\n    top: 0;\r\n    right: 0;\r\n    bottom: 0;\r\n    left: 0;\r\n    height: 100%;\r\n    background-color: rgba(0,0,0,0.4);\r\n    display: flex;\r\n    align-items: flex-end;\r\n}\r\n\r\n.modal {\r\n    text-align: center;\r\n    color: white;\r\n    background-color: rgb(70, 64, 70);\r\n    width: 100%;\r\n    height: 50vh;\r\n    position: relative;\r\n    flex-flow: column;\r\n    margin: 13px;\r\n}\r\n\r\n.text-modal {\r\n    font-size: 1.2em;\r\n}\r\n\r\n.text-modal-wrong {\r\n    font-size: 1.2em;\r\n}\r\n\r\n@media screen and (max-width: 480px) {\r\n    .text-hello {\r\n        margin-top: 17px;\r\n    }\r\n    .text-modal-wrong {\r\n        font-size: 1.1em;\r\n    }\r\n    .text-modal {\r\n        font-size: 1.1em;\r\n    }\r\n}\r\n@media screen and (max-width: 405px) {\r\n    .text-modal-wrong {\r\n        font-size: 1em;\r\n    }\r\n}\r\n@media screen and (max-width: 380px) {\r\n    .text-modal-wrong {\r\n        font-size: 0.9em;\r\n    }\r\n}\r\n@media screen and (max-width: 330px) {\r\n    .text-modal-wrong {\r\n        font-size: 0.8em;\r\n    }\r\n    .text-modal {\r\n        font-size: 1em;\r\n    }\r\n}\r\n@media screen and (max-width: 300px) {\r\n    .text-modal-wrong {\r\n        font-size: 0.7em;\r\n    }\r\n}", ""]);
 
 // exports
 
@@ -81576,17 +81576,17 @@ var Modal = function Modal(_ref) {
       }
     } else {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "text-modal",
+        className: "text-modal-wrong",
         style: {
           marginBottom: 10 + 'px'
         }
       }, "OOPS!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "text-modal",
+        className: "text-modal-wrong",
         style: {
           marginBottom: 10 + 'px'
         }
       }, "SOMETHING WENT WRONG"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "text-modal"
+        className: "text-modal-wrong"
       }, "CHECK DETAILS"));
     }
   };

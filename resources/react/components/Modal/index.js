@@ -1,6 +1,6 @@
 import React from 'react';
 import './Modal.css';
-import {Button,ButtonLink} from '../Button';
+import {Button} from '../Button';
 import { Link } from 'react-router-dom';
 
 export const Modal = ({sentEmail,onClickButton}) => {
@@ -22,9 +22,9 @@ export const Modal = ({sentEmail,onClickButton}) => {
         } else {
             return (
                 <>
-                    <p className='text-modal' style={{marginBottom: 10 + 'px'}}>OOPS!</p>
-                    <p className='text-modal' style={{marginBottom: 10 + 'px'}}>SOMETHING WENT WRONG</p>
-                    <p className='text-modal'>CHECK DETAILS</p>
+                    <p className='text-modal-wrong' style={{marginBottom: 10 + 'px'}}>OOPS!</p>
+                    <p className='text-modal-wrong' style={{marginBottom: 10 + 'px'}}>SOMETHING WENT WRONG</p>
+                    <p className='text-modal-wrong'>CHECK DETAILS</p>
                 </>
             )
         }
